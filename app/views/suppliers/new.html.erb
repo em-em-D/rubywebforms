@@ -1,0 +1,44 @@
+ <% provide(:title, 'Register Supplier') %>
+<h1>Register</h1>
+
+<div class="row">
+  <div class="col-md-6 col-md-offset-3">
+    <%= form_for (@supplier) do |f| %>
+     
+
+      <%= f.label :fullname %>
+      <%= f.text_field :fullname, class: 'form-control' %>
+
+      <%= f.label :email %>
+      <%= f.email_field :email, class: 'form-control' %>
+
+       <%= f.label :company_name %>
+      <%= f.text_field :companyname, class: 'form-control' %>
+
+       <%= f.label :company_Registrion_Number %>
+      <%= f.text_field :companyReg, class: 'form-control' %>
+
+       <%= f.label :City %>
+      <%= f.text_field :city, class: 'form-control' %>
+
+       <%= f.label :Phone_number %>
+      <%= f.text_field :phoneNumber, class: 'form-control' %>
+
+       <%= f.label :landmark %>
+      <%= f.text_field :landmark, class: 'form-control' %>
+
+       <%= f.label :district %>
+      <%= f.text_field :district, class: 'form-control' %>
+
+      <%= f.label :password %>
+      <%= f.password_field :password , class: 'form-control'%>
+
+      <%= f.label :password_confirmation, "Confirmation" %>
+      <%= f.password_field :password_confirmation , class: 'form-control'%>
+
+      <%= f.submit "Create my account", class: "btn btn-primary" %>
+    <% end %>
+  </div>
+</div>
+
+
